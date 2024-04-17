@@ -17,7 +17,7 @@ service:
 ingress:
   enabled: true
   className: "nginx"
-  annotations: 
+  annotations:
     nginx.ingress.kubernetes.io/proxy-body-size: "0"
     ingress.kubernetes.io/ssl-redirect: "false"
     cert-manager.io/cluster-issuer: letsencrypt-prod
@@ -27,7 +27,7 @@ ingress:
       paths:
         - path: /
           pathType: ImplementationSpecific
-  tls: 
-    - secretName: chart-example-tls
+  tls:
+    - secretName: dev-artemis-tls
       hosts:
         - dev-artemis.dianadauletkerey.link
