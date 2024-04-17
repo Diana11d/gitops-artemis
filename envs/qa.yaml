@@ -14,7 +14,7 @@ service:
   port: 5000
 
 
-  ingress:
+ingress:
   enabled: true
   className: "nginx"
   annotations:
@@ -31,4 +31,3 @@ service:
     - secretName: dev-artemis-tls
       hosts:
         - dev-artemis.dianadauletkerey.link
-        
