@@ -31,3 +31,4 @@ service:
     - secretName: dev-artemis-tls
       hosts:
         - dev-artemis.dianadauletkerey.link
+        
